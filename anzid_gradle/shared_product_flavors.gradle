@@ -1,0 +1,13 @@
+android {
+    flavorDimensions "default"
+
+    productFlavors {
+        dev {
+
+        }
+        prod {
+
+        }
+
+    }
+}

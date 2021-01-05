@@ -1,0 +1,20 @@
+dependencies {
+    // Kotlin
+    implementation kotlin_dependency.stdlib
+    implementation kotlin_dependency.coroutines_core
+    implementation kotlin_dependency.coroutines_android
+    // Material design
+    implementation android_dependency.material
+    // AndroidX
+    implementation androidx.core_ktx
+    implementation androidx.app_compat
+    kapt androidx.annotations
+    // Lifecycle
+    implementation lifecycle.java8
+    implementation lifecycle.saved_state
+    implementation lifecycle.extensions
+    implementation lifecycle.viewmodel_ktx
+    implementation lifecycle.runtime
+
+//    debugImplementation libs.leak_canary
+}

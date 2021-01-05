@@ -1,0 +1,7 @@
+import deps.Dependencies
+
+dependencies {
+    implementation Dependencies.Room.RUNTIME
+    implementation Dependencies.Room.KTX
+    kapt Dependencies.Room.COMPILER
+}

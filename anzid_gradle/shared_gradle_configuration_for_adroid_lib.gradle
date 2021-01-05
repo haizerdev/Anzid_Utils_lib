@@ -1,0 +1,12 @@
+apply from : rootProject.file(GradleConstants.SHARED_BUILD_TYPES_GRADLE_PATH)
+apply from : rootProject.file(GradleConstants.SHARED_PRODUCT_FLAVORS_GRADLE_PATH)
+apply from : rootProject.file(GradleConstants.SHARED_COMPILE_OPTIONS_GRADLE_PATH)
+
+android {
+    compileSdkVersion(deps.AppSettings.COMPILE_SDK)
+
+    defaultConfig {
+        minSdkVersion(deps.AppSettings.MIN_SDK)
+        targetSdkVersion(deps.AppSettings.TARGET_SDK)
+    }
+}

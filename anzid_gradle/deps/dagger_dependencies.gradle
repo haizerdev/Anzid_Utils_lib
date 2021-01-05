@@ -1,0 +1,14 @@
+import deps.Dependencies
+
+apply plugin: 'dagger.hilt.android.plugin'
+
+dependencies {
+    implementation Dependencies.Hilt.ANDROID
+    kapt Dependencies.Hilt.COMPILER
+    implementation Dependencies.Hilt.VIEW_MODEL
+    kapt Dependencies.Hilt.ANDROIDX_COMPILER
+}
+
+kapt {
+    correctErrorTypes true
+}

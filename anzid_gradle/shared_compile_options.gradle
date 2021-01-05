@@ -1,0 +1,13 @@
+import deps.AppSettings
+
+android {
+    compileOptions {
+
+        sourceCompatibility AppSettings.JAVA_VERSION
+        targetCompatibility AppSettings.JAVA_VERSION
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
