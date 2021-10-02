@@ -60,7 +60,6 @@ public class AnzidLog {
     }
 
     public static void v(String message, Throwable t) {
-        if(BuildUtilKt.isPlayBuild()) return;
         if (loggers != null) {
             for (Logger logger : loggers) {
                 logger.v(message, t);
@@ -69,7 +68,6 @@ public class AnzidLog {
     }
 
     public static void d(String message, Throwable t) {
-        if(BuildUtilKt.isPlayBuild()) return;
         if (loggers != null) {
             for (Logger logger : loggers) {
                 logger.d(message, t);
@@ -78,7 +76,6 @@ public class AnzidLog {
     }
 
     public static void i(String message, Throwable t) {
-        if(BuildUtilKt.isPlayBuild()) return;
         if (loggers != null) {
             for (Logger logger : loggers) {
                 logger.i(message, t);
@@ -87,7 +84,6 @@ public class AnzidLog {
     }
 
     public static void w(String message, Throwable t) {
-        if(BuildUtilKt.isPlayBuild()) return;
         if (loggers != null) {
             for (Logger logger : loggers) {
                 logger.w(message, t);
@@ -96,7 +92,6 @@ public class AnzidLog {
     }
 
     public static void e(String message, Throwable t) {
-        if(BuildUtilKt.isPlayBuild()) return;
         if (loggers != null) {
             for (Logger logger : loggers) {
                 logger.e(message, t);
@@ -105,7 +100,6 @@ public class AnzidLog {
     }
 
     public static void wtf(String message, Throwable t) {
-        if(BuildUtilKt.isPlayBuild()) return;
         if (loggers != null) {
             for (Logger logger : loggers) {
                 logger.wtf(message, t);

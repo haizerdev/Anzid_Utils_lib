@@ -60,7 +60,7 @@ class AppSignatureSmsVerificationHelper(context: Context) {
     }
 
     fun loggedAppSignature() {
-        Log.v(TAG, "app signature hash for type-${BuildConfig.BUILD_TYPE} and flavor-${BuildConfig.FLAVOR} : $appSignature")
+        Log.v(TAG, "app signature hash for type-${BuildConfig.BUILD_TYPE} : $appSignature")
     }
 
     /**
